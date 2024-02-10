@@ -1,0 +1,28 @@
+GET http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsIm5hbWUiOiJIZXJsaW5hIiwiZW1haWwiOiJoZXJsaW5hQGV4YW1wbGUuY29tIiwiaWF0IjoxNzA2MDI0ODc2LCJleHAiOjE3MDYwMjQ4OTZ9.6yhiWAtk_wvjzgfVlgCrK0qjEb43m1m4sra5ajt43WQ
+
+###
+POST http://localhost:3000/login 
+Content-Type: application/json
+
+{
+    "email": "herlina@example.com",
+    "password": "herlina123"
+}
+
+### 
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "email": "herlina@example.com",
+    "name":"Herlina",
+    "password": "herlina123",
+    "password_confirmation": "herlina123"
+}
+
+###
+GET http://localhost:3000/token 
+
+### 
+DELETE http://localhost:3000/logout 
